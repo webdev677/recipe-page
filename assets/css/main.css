@@ -1,0 +1,174 @@
+/* abstracts */
+@import "./abstracts/_variables.css";
+
+/* base */
+@import "./base/__helper.css";
+@import "./base/__reset.css";
+@import "./base/__typography.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--bgcolor);
+}
+
+.wrapper {
+  width: 74rem;
+  margin-top: 12.1rem;
+  margin-bottom: 12.1rem;
+  padding: 4rem;
+  background: #fff;
+  border-radius: 2.5rem;
+}
+
+.wrapper img {
+  width: 100%;
+  margin-bottom: 4rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.title {
+  margin-bottom: 2.5rem;
+  font-size: 4.1em;
+  font-family: "Young Serif", sans-serif;
+  color: var(--text-color);
+}
+
+.title--red {
+  color: var(--text-color-3);
+}
+
+.text {
+  margin-bottom: 3.5rem;
+  font-size: 1.8em;
+  font-family: "OutfitLight";
+}
+
+.block {
+  margin-bottom: 3rem;
+  padding: 3.5rem;
+  background: var(--pink-light);
+  border-radius: 2.4rem;
+}
+
+.block__title {
+  margin-bottom: 2.5rem;
+  font-size: 2.3em;
+  font-family: "OutfitBold";
+  color: var(--pink-dark);
+}
+
+.block__list {
+  margin-left: 2.2rem;
+  list-style: disc;
+}
+
+.block__list li {
+  margin-bottom: 2rem;
+  font-family: "OutfitLight";
+  font-size: 1.9em;
+  line-height: 1.8em;
+}
+
+.block__list li:last-child {
+  margin-bottom: 0;
+}
+
+.block__list li::marker {
+  color: var(--pink-dark);
+}
+
+.block__list li span {
+  font-family: "OutfitBold";
+}
+
+.list {
+  margin-bottom: 3rem;
+  list-style: disc;
+}
+
+.list__title {
+  margin-bottom: 2.5rem;
+  font-size: 2.7em;
+  font-family: "OutfitBold";
+  color: var(--text-color-3);
+}
+
+.list li {
+  margin-left: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: "OutfitLight";
+  font-size: 1.9em;
+  line-height: 1.8em;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.list li::marker {
+  color: var(--pink-dark);
+}
+
+.list li span {
+  font-family: "OutfitBold";
+}
+
+.list__num {
+  list-style: decimal;
+}
+
+.list__num li {
+  line-height: 1.8em;
+  margin-bottom: 1.8rem;
+}
+
+.table {
+  margin: 0 3rem;
+}
+
+.table__title {
+  font-size: 1.8em;
+  font-family: "OutfitLight";
+}
+.table__kl {
+  font-size: 1.8em;
+  font-family: "OutfitBold";
+  color: var(--pink-dark);
+}
+.table__column {
+  width: 50%;
+}
+
+.line {
+  margin-bottom: 3rem;
+  border-width: 0.1em;
+  opacity: 0.3;
+  border-color: var(--line-color);
+}
+
+.table__line {
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 852px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .wrapper img {
+    border-radius: 0;
+  }
+
+  .container {
+    padding: 3.5rem;
+  }
+
+  .title {
+    font-size: 3.8em;
+  }
+}
